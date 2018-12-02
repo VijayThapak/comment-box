@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-12 comment-box grey-border">
+    <div class="row">
+      <div class="col-2">
+        <app-image [imgName]="'dummy01.jpg'"></app-image>
+      </div>
+      <div class="col-10">
+        <form [formGroup]="commentForm" (submit)="submitForm()">
+          <div class="form-group">
+            <input formControlName="comment" class="form-control comment-input" type="text" placeholder="Add a comment..." />
+          </div>
+          <button type="submit" class="btn float-right" [disabled]="commentForm.invalid">Comment using...</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

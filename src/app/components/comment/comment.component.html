@@ -1,0 +1,42 @@
+<div class="row  grey-border">
+  <div class="col-12">
+    <div class="row border-bottom" *ngFor="let c of comments">
+      <div class="col-2">
+        <app-image [imgName]="c.icon"></app-image>
+      </div>
+      <div class="col-10">
+        <p><a class="user-name dot" href="javascript:;">{{c.username}}</a> <span class="profession">
+            {{c.profession}}</span>
+        </p>
+        <p>{{c.comment}}</p>
+        <div>
+          <a (click)="c.like = !c.like" class="dot" href="javascript:;">{{c.like ? "Like" : "Unlike"}}</a>
+          <a (click)="c.reply = !c.reply" class="dot" href="javascript:;">Reply</a>
+          <a class="dot" href="javascript:;" (click)="deleteComment(c.id)">Delete</a><span class="timestamp">{{c.timestamp}}</span>
+          <app-reply-box [reply]="c.reply" [parentId]="c.id"></app-reply-box>
+        </div>
+        <div class="row border-top" *ngFor="let r of c.replies">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-2">
+                <app-image [imgName]="r.icon"></app-image>
+              </div>
+              <div class="col-10">
+                <p><a class="user-name dot" href="javascript:;">{{r.username}}</a> <span class="profession">
+                    {{r.profession}}</span>
+                </p>
+                <p>{{r.comment}}</p>
+                <div>
+                  <a (click)="r.like = !r.like" class="dot" href="javascript:;">{{r.like ? "Like" : "Unlike"}}</a>
+                  <a (click)="r.reply = !r.reply" class="dot" href="javascript:;">Reply</a>
+                  <a class="dot" href="javascript:;" (click)="deleteComment(c.id, r.id)">Delete</a><span class="timestamp">{{r.timestamp}}</span>
+                  <app-reply-box [reply]="r.reply" [parentId]="c.id" [childId]="r.id"></app-reply-box>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

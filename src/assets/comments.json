@@ -1,0 +1,59 @@
+{
+  "comments": [{
+      "id": "1",
+      "icon": "dummy02.jpg",
+      "username": "Kerny Clair",
+      "profession": "University of Delhi",
+      "comment": "will this work on static HTML pages?",
+      "like": true,
+      "reply": false,
+      "timestamp": "April 13 at 6:11am",
+      "replies": [{
+          "id": "11",
+          "icon": "dummy01.jpg",
+          "username": "Vanessa Lourng",
+          "profession": "Journalist/blogger",
+          "comment": "yes, but you won't get the notification emails for new comments if your server doesn't support scripts",
+          "like": false,
+          "timestamp": "April 13 at 6:37am"
+        },
+        {
+          "id": "22",
+          "icon": "dummy02.jpg",
+          "username": "Kerny Clair",
+          "profession": "University of Delhi",
+          "comment": "ok, that will work for me",
+          "like": true,
+          "reply": false,
+          "timestamp": "April 13 at 6:11am"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "icon": "dummy01.jpg",
+      "username": "Toni Hartz haru",
+      "profession": "Top Commenter",
+      "comment": "nice, no need to create new accounts to leave comments :)",
+      "reply": false,
+      "like": true,
+      "timestamp": "April 13 at 6:08am",
+      "replies": [
+
+      ]
+    },
+    {
+      "id": "4",
+      "icon": "dummy01.jpg",
+      "username": "Benjamin Murphy",
+      "profession": "Engineering College",
+      "comment": "I like Facebook",
+      "like": true,
+      "reply": false,
+      "timestamp": "April 12 at 2:31am",
+      "replies": [
+
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<div class="row" *ngIf="reply">
+  <div class="col-12">
+    <form [formGroup]="replyForm" (submit)="submitReplyForm()">
+      <div class="form-group">
+        <input class="form-control" type="text" formControlName="replyComment" />
+      </div>
+      <div class="form-group">
+        <button type="submit" [disabled]="replyForm.invalid">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

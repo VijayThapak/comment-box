@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+p {
+  margin: 0;
+}
+
+.grey-border {
+  border-top: 1px solid rgb(168, 166, 166);
+}
+
+.comment-box {
+  background-color: #e9ecef;
+  padding: 10px;
+}
+
+.comment-input {
+  min-height: 30px;
+  width: 100%;
+}
+
+.user-name {
+  color: #1c73d1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.user-name:hover {
+  text-decoration: none;
+}
+
+.profession,
+.timestamp {
+  color: #999a9c;
+}
+
+.dot::after {
+  content: " ' ";
+}
+
+.border-top {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.border-bottom {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
